@@ -13,7 +13,8 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "google",
+      tagId: "GTM-TV582WMS",
     },
     locale: "en-US",
     baseUrl: "clemorl.fr",
@@ -23,34 +24,34 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "IBM Plex Sans",
-        body: "Inter",
+        header: "JetBrains Mono",
+        body: "Geist",
         code: "JetBrains Mono",
       },
-      colors: {
-        lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
-        },
-        darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
-        },
-      },
+colors: {
+  lightMode: {
+    light: "#eff1f5",        // Latte Base
+    lightgray: "#e6e9ef",    // Latte Mantle
+    gray: "#bcc0cc",         // Latte Surface1
+    darkgray: "#4c4f69",     // Latte Text
+    dark: "#d20f39",         // Latte Red (Accents/Titles)
+    secondary: "#1e66f5",    // Latte Blue (Links/Headings)
+    tertiary: "#40a02b",     // Latte Green (Success/Checkmarks)
+    highlight: "rgba(30, 102, 245, 0.15)", // Translucent Blue
+    textHighlight: "#df8e1d88", // Latte Yellow (Highlight)
+  },
+  darkMode: {
+    light: "#24273a",        // Macchiato Base
+    lightgray: "#1e2030",    // Macchiato Mantle
+    gray: "#5b6078",         // Macchiato Surface1
+    darkgray: "#cad3f5",     // Macchiato Text
+    dark: "#ed8796",         // Macchiato Red (Accents/Titles)
+    secondary: "#8aadf4",    // Macchiato Blue (Links/Headings)
+    tertiary: "#a6da95",     // Macchiato Green (Success/Checkmarks)
+    highlight: "rgba(138, 173, 244, 0.15)", // Translucent Blue
+    textHighlight: "#eed49f88", // Macchiato Yellow (Highlight)
+  },
+},
     },
   },
   plugins: {
