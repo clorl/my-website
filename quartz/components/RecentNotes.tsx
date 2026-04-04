@@ -14,7 +14,8 @@ interface Options {
   linkToMore: SimpleSlug | false
   showTags: boolean
   filter: (f: QuartzPluginData) => boolean
-  sort: (f1: QuartzPluginData, f2: QuartzPluginData) => number
+  sort: (f1: QuartzPluginData, f2: QuartzPluginData) => number,
+  showDate: boolean,
 }
 
 const defaultOptions = (cfg: GlobalConfiguration): Options => ({
@@ -23,6 +24,7 @@ const defaultOptions = (cfg: GlobalConfiguration): Options => ({
   showTags: true,
   filter: () => true,
   sort: byDateAndAlphabetical(cfg),
+  showDate: true,
 })
 
 export default ((userOpts?: Partial<Options>) => {
@@ -53,7 +55,7 @@ export default ((userOpts?: Partial<Options>) => {
                       </a>
                     </h3>
                   </div>
-                  {page.dates && (
+                  {opts.showDate && page.dates && (
                     <p class="meta">
                       <Date date={getDate(cfg, page)!} locale={cfg.locale} />
                     </p>

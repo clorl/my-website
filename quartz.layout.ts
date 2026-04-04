@@ -12,6 +12,11 @@ export const sharedPageComponents: SharedLayout = {
   }),
 }
 
+const explorer = {
+    	title: "Menu",
+  		filterFn: (node) => !new Set(["About Me", "Shortcodes"]).has(node.displayName)
+};
+
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
@@ -21,7 +26,7 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
-    Component.TagList(),
+    //Component.TagList(),
   ],
   left: [
     Component.PageTitle(),
@@ -36,7 +41,15 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+		Component.RecentNotes({
+  		title: "",
+  		limit: 5,
+  		filter: (f) => f.frontmatter?.tags?.includes("pinned") ?? false,
+  		linkToMore: false,
+  		showTags: false,
+  		showDate: false,
+		}),
+		Component.Explorer(explorer),
   ],
   right: [
     Component.DesktopOnly(Component.TableOfContents()),
@@ -58,7 +71,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer(explorer)
   ],
   right: [],
 }

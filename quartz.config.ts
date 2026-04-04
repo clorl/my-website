@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Website",
+    pageTitle: "Clément O.",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -45,8 +45,8 @@ colors: {
     lightgray: "#1e2030",    // Macchiato Mantle
     gray: "#5b6078",         // Macchiato Surface1
     darkgray: "#cad3f5",     // Macchiato Text
-    dark: "#ed8796",         // Macchiato Red (Accents/Titles)
-    secondary: "#8aadf4",    // Macchiato Blue (Links/Headings)
+    dark: "#ef9f76",         // Macchiato Red (Accents/Titles)
+    secondary: "#ca9ee6",    // Macchiato Blue (Links/Headings)
     tertiary: "#a6da95",     // Macchiato Green (Success/Checkmarks)
     highlight: "rgba(138, 173, 244, 0.15)", // Translucent Blue
     textHighlight: "#eed49f88", // Macchiato Yellow (Highlight)
@@ -62,8 +62,8 @@ colors: {
       }),
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "github-light",
-          dark: "github-dark",
+          light: "catppuccin-latte",
+          dark: "catppuccin-macchiato",
         },
         keepBackground: false,
       }),

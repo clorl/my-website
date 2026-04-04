@@ -1,6 +1,8 @@
 ---
 title: Portfolio
 cssclasses:
+tags:
+  - pinned
 ---
 
-Hello
+![[WIP]]
