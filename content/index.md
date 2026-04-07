@@ -32,10 +32,15 @@ Designed and shipped live content for a free-to-play PvP multiplayer game by syn
 Maintained design integrity across multiple live-content updates, ensuring a stable player experience despite high-frequency changes in development direction.
 
 **Rimeblood:** Led the design and development of a new character class. By optimizing the production pipeline, I reduced the development cycle from 6 months to a record 4 months without sacrificing quality.
+
 **New Abilities (Revenue & Retention):** Proposed and designed the game’s first new abilities for existing characters. Pitched, prototyped and shipped 4 unique abilities, resulting in a significant spike in player engagement and revenue.
+
 **Outbreak :** Pitched the design and development of the first PVE game mode in Century, where players fight a swarm of enemies and defend two towers in successive rounds. Each round, players get to upgrade their abilities with currency they gained killing enemies the round before.
+
 **The Colosseum:** Prototyped and iterated on existing gamemodes variants to bring content variety to the playerbase in a new kind of event : Kingslayer mode and Plunder mode.
+
 **Artifact :** Pitched numerous concepts for the first asymetric game mode in Century inspired by search and destroy gameplay like Counter Strike. One of these concepts became the Artifact mode.
+
 **R&D :** Worked on numerous design concepts for long-term direction demands with advanced UI mockups and content design. Constantly worked on core gameplay changes to make the game appeal to broader audience to fit the direction’s vision.
 
 ****
